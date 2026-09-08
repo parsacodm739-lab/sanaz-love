@@ -1,44 +1,124 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>برای ساناز 🐱💗</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snz / ساناز 🐱</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="hearts"></div>
+    <main class="container">
 
-  <main class="card">
+        <!-- Start Screen -->
+        <section id="startScreen" class="card">
+            <div class="big-cat">🐱</div>
 
-    <div class="cat">🐱</div>
+            <h1>Snz / ساناز</h1>
 
-    <div class="sparkles">✨ 🌸 ✨</div>
+            <p class="gift">
+                هدیه کوچیک من به تو 🎁💗
+            </p>
 
-    <p class="small">برای تو، ساناز جان</p>
+            <p class="description">
+                با گربه کوچولوت بازی کن و ماهی‌ها و قلب‌ها رو جمع کن! 🐟❤️
+            </p>
 
-    <h1>ساناز 💗</h1>
+            <button id="startButton">
+                شروع بازی 🎮
+            </button>
+        </section>
 
-    <div class="message">
-      <span>درسته که خیلی ازت دورم</span>
-      <strong>ولی همیشه کنارتم</strong>
-    </div>
 
-    <div class="paws">🐾 🐾 🐾</div>
+        <!-- Game Screen -->
+        <section id="gameScreen" class="hidden">
 
-    <p class="footer">
-      فاصله فقط بین دو نفره؛ نه بین دو قلب. 💕
-    </p>
+            <div class="topbar card">
 
-    <button onclick="makeHearts()">
-      یه قلب برای تو 💖
-    </button>
+                <div>
+                    امتیاز
+                    <strong id="score">0</strong>
+                </div>
 
-  </main>
+                <div>
+                    مرحله
+                    <strong id="level">1</strong>
+                </div>
 
-  <script src="script.js"></script>
+                <div>
+                    رکورد
+                    <strong id="best">0</strong>
+                </div>
+
+            </div>
+
+
+            <div id="game" class="card">
+
+                <div class="cloud cloud1">☁️</div>
+                <div class="cloud cloud2">☁️</div>
+
+                <div id="item">🐟</div>
+
+                <div id="cat">🐱</div>
+
+            </div>
+
+
+            <div class="controls">
+
+                <button id="leftButton">
+                    ◀
+                </button>
+
+                <button id="rightButton">
+                    ▶
+                </button>
+
+            </div>
+
+            <p class="help">
+                گربه رو حرکت بده و آیتم‌ها رو بگیر 🐾
+            </p>
+
+            <button id="restartButton" class="restart">
+                دوباره بازی کن 🔄
+            </button>
+
+        </section>
+
+
+        <!-- End Screen -->
+        <section id="endScreen" class="card hidden">
+
+            <div class="big-cat">
+                😻
+            </div>
+
+            <h2>آفرین! 💗</h2>
+
+            <p>
+                امتیازت شد:
+            </p>
+
+            <div id="finalScore">
+                0
+            </div>
+
+            <p id="finalMessage">
+                گربه خیلی خوشحال شد! 🐾
+            </p>
+
+            <button id="againButton">
+                دوباره بازی کنیم 🎮
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
